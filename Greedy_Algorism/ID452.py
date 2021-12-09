@@ -13,18 +13,12 @@ def findMinArrowShots(points):
                 ind += 1
                 ida -= 1
                 if ind+i > l-1:
-                    # ida -= 1
                     break
             num += 1
-
             i = i + ind
             ind = 1
-
-        a = 1
         if (ida == 1):
             num += 1
-        if l == 1:
-            num = 1
         return num
 
 print(findMinArrowShots([[10,16],[2,8],[1,6],[7,12]]))#2
